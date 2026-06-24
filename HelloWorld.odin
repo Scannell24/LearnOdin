@@ -3,7 +3,7 @@ package main
 import "core:fmt"
 
 main :: proc() {
-	// This is a comment, they are started with double backslashes
+	// This is a comment, they are started with double forward slashes
 
 	fmt.println("Hello World!") // comments can go after lines too
 
@@ -64,7 +64,7 @@ main :: proc() {
 		str2 = '\n' // Special chars are escaped with backslash \
 		fmt.print(str1, str2)
 		
-		fmt.println("Strings of paths need double forward-slashes: C:\\Windows\\notepad.exe")
+		fmt.println("Strings of paths need double back-slashes: C:\\Windows\\notepad.exe")
 		fmt.println(`Raw string literals are enclosed in single back ticks: C:\Windows\notepad.exe \n`)
 		fmt.print(`Raw string literals are enclosed i \n`)
 	}
@@ -110,4 +110,7 @@ main :: proc() {
 		fmt.println("z :: y + 7")
 		fmt.println("z equals", z)
 	}
+
+	fmt.println()
+	fmt.println("Goodbye World!")
 }
