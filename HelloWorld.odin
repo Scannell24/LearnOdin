@@ -111,6 +111,51 @@ main :: proc() {
 		fmt.println("z equals", z)
 	}
 
+	fmt.println("\n\n --------  CONTROL FLOW --------\n")
+	{
+		z : int : 3
+
+		fmt.println("There are many ways to style for loops")
+
+		for i := 0; i < z; i += 1 {
+			fmt.print(i, " ")
+		}
+		fmt.println()
+
+		for i := 0; i < z; i += 1 do fmt.print(i, " ")
+		fmt.println()
+
+		i := 0
+		for i < z {
+			fmt.print(i, " ")
+			i += 1
+		}
+		fmt.println()
+
+		for i in 0..<z {
+			fmt.print(i, " ")
+		}
+		fmt.println()
+
+		some_string := "HEY"
+		for x in some_string {
+			fmt.print(x, " ")
+		}
+		fmt.println()
+
+		some_array := [3]int{1, 4, 9}
+		for x in some_array {
+			fmt.print(x, " ")
+		}
+		fmt.println()
+
+		some_slice := []int{1, 4, 9}
+		for x in some_slice {
+			fmt.print(x, " ")
+		}
+		fmt.println()
+	}
+
 	fmt.println()
 	fmt.println("Goodbye World!")
 }
